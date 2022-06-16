@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otpverification"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    >
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/signinlogo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/roboto"
+        android:text="Enter your Mobile number"
+        android:textColor="@color/title"
+        android:textFontWeight="700"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="@font/roboto"
+        android:text="We will send you the 4 digit verification code"
+        android:textColor="#737092"
+        android:lineHeight="14dp"
+        android:textFontWeight="500"
+        android:textSize="12sp" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/input_mobile_field"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bgbox"
+        android:hint="Mobile number"
+        android:gravity="center"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/getotp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="31dp"
+            android:text="Send OTP"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar_sending_otp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="194dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/roboto"
+        android:text="Don’t have an account?Sign Up" />
+
+
+
+</LinearLayout>

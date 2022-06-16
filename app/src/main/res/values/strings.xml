@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">technocare</string>
+    <string name="john">john</string>
+    <string name="hello">Hello</string>
+    <string name="plum">plumber</string>
+    <string name="carp">carpenter</string>
+    <string name="paint">painter</string>
+    <string name="ele">electrician</string>
+    <string name="search_element">Search element</string>
+    <string name="trending">Trending</string>
+    <string name="dummy">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ...</string>
+    <string name="relax">We want you to sit back and relax. Resolving your problem will be our first priority.</string>
+
+
+</resources>

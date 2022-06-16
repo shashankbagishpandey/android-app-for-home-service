@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plumber">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="plumber section"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="service_date_time"
+            android:textColor="@color/black" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_baseline_calendar_month_24" />
+                <TextView
+                    android:id="@+id/detail_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_rectangle_background"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/morning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Morning"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/afternoon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   affternoon"
+                    android:layout_marginTop="20dp"
+                    android:checked="false"
+
+                    android:textSize="20dp" />
+                <RadioButton
+                    android:id="@+id/evening"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Evening"
+                    android:layout_marginTop="20dp"
+                    android:checked="false"
+
+                    android:textSize="20dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="true"
+            >
+
+            <EditText
+                android:id="@+id/detail_address"
+                android:layout_width="519dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:lines="5"
+                android:padding="2dp"
+                android:hint="add_address" />
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/detail_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="next"/>
+    </LinearLayout>
+
+</LinearLayout>
